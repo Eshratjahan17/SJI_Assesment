@@ -1,0 +1,42 @@
+.main {
+  background-image: url("./Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 40px 120px 40px 120px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu ul {
+  display: flex;
+}
+.nav-menu li {
+  list-style-type: none;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.nav-menu a:hover {
+  color: #FF5151;
+}
+.nav-menu button {
+  width: 157px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 12px 8px 10px 8px;
+}/*# sourceMappingURL=index.css.map */
