@@ -36,7 +36,18 @@
   line-height: 22px;
   background-color: transparent;
   border: 1px solid #FFFFFF;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #FFFFFF;
   padding: 12px 8px 10px 8px;
+}
+.nav-menu .logo {
+  display: flex;
+}
+.nav-menu .logo img {
+  height: 40px;
+  width: 40px;
+}
+.nav-menu .logo p {
+  font-weight: 700;
+  font-size: 28px;
 }/*# sourceMappingURL=index.css.map */
