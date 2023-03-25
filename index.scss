@@ -105,7 +105,7 @@
 }
 /*Our services*/
 .ourServices {
-  h2 {
+  h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -114,6 +114,12 @@
 
     color: #ffffff;
   }
+  .service{
+
+    display: flex;
+    align-items: center;
+  }
+  
 }
 /*Responsive*/
 @media (max-width: 768px) {

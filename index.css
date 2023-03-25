@@ -101,13 +101,17 @@
 }
 
 /*Our services*/
-.ourServices h2 {
+.ourServices h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
   text-align: center;
   color: #ffffff;
+}
+.ourServices .service {
+  display: flex;
+  align-items: center;
 }
 
 /*Responsive*//*# sourceMappingURL=index.css.map */
