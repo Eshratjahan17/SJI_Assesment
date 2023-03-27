@@ -5,6 +5,31 @@
   font-family: "Nunito Sans", sans-serif;
   padding: 40px 120px 40px 120px;
 }
+@mixin service{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px 35px 52px 35px ;
+}
+@mixin servicPargraph{
+  font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: rgba(255, 255, 255, 0.7);;
+}
+@mixin servicesImg($bg){
+background-color:$bg;
+padding: 21px 20px;
+border-radius: 50px;
+}
+@mixin serviceHeader{
+  font-weight: 600;
+font-size: 28px;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+color: #ffffff;
+}
 /*navbar*/
 .navMenu {
   display: flex;
@@ -120,6 +145,36 @@
     align-items: center;
   }
   
+}
+/*service*/
+.service{
+  h6{
+    @include serviceHeader;
+  }
+  p{
+    @include servicPargraph;
+  }
+  .uiDesign{
+    @include service;
+    img{
+      @include servicesImg(rgba(84, 84, 212, 0.1));
+    }
+  
+    
+  }
+  .graphicDesign{
+    @include service;
+    img{
+@include servicesImg(rgba(240, 64, 55, 0.1));
+    }
+  }
+  .motionDesign{
+    @include service;
+    img{
+      @include servicesImg(rgba(254, 220, 90, 0.1));
+
+    }
+  }
 }
 /*Responsive*/
 @media (max-width: 768px) {
