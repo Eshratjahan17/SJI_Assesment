@@ -6,6 +6,21 @@
   padding: 40px 120px 40px 120px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+}
+.logo h3 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+}
+
 /*navbar*/
 .navMenu {
   display: flex;
@@ -42,20 +57,6 @@
   border-radius: 10px;
   color: #ffffff;
   padding: 12px 8px 10px 8px;
-}
-.navMenu .logo {
-  display: flex;
-  align-items: center;
-}
-.navMenu .logo img {
-  height: 40px;
-  width: 40px;
-  margin-right: 8px;
-}
-.navMenu .logo h3 {
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 28px;
 }
 
 /*about us*/
@@ -161,6 +162,39 @@
   background-color: rgba(254, 220, 90, 0.1);
   padding: 21px 20px;
   border-radius: 50px;
+}
+
+/*footer*/
+.address h3 {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  color: #ffffff;
+}
+.address p {
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 38px;
+}
+.address .socials {
+  display: flex;
+}
+
+.privacy {
+  display: flex;
+  justify-content: space-between;
+}
+.privacy p {
+  margin-right: 24px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+}
+.bottomSection p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /*Responsive*//*# sourceMappingURL=index.css.map */

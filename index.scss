@@ -30,6 +30,22 @@ margin-bottom: 20px;
 text-align: center;
 color: #ffffff;
 }
+
+// logo
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+  }
+  h3 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 28px;
+  }
+}
 /*navbar*/
 .navMenu {
   display: flex;
@@ -67,20 +83,7 @@ color: #ffffff;
     color: #ffffff;
     padding: 12px 8px 10px 8px;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    img {
-      height: 40px;
-      width: 40px;
-      margin-right: 8px;
-    }
-    h3 {
-      font-weight: 700;
-      color: #ffffff;
-      font-size: 28px;
-    }
-  }
+ 
 }
 /*about us*/
 .aboutUs {
@@ -174,6 +177,38 @@ color: #ffffff;
       @include servicesImg(rgba(254, 220, 90, 0.1));
 
     }
+  }
+}
+/*footer*/
+.address{
+  h3{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: #ffffff;
+  }
+  p{
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 38px;
+  }
+  .socials{
+    display: flex;
+  }
+}
+.privacy{
+  display: flex;
+  justify-content: space-between;
+  p{
+    margin-right: 24px;
+  }
+}
+.bottomSection{
+  display: flex;
+  justify-content: space-between;
+  p{
+    font-weight: 400;
+font-size: 16px;
+color: rgba(255, 255, 255, 0.7);
   }
 }
 /*Responsive*/
