@@ -164,6 +164,84 @@
   border-radius: 50px;
 }
 
+.reviews {
+  display: flex;
+}
+.reviews .bigImg img {
+  border-radius: 12px;
+  margin-right: 24px;
+}
+.reviews .review1 {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 48px 35px 48px 35px;
+}
+.reviews .review1 h1 {
+  color: #ffffff;
+}
+.reviews .review1 p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.reviews .review {
+  padding: 48px 35px 48px 35px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-left: 24px;
+}
+.reviews .review h1 {
+  text-align: center;
+  color: #ffffff;
+}
+.reviews .review p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.reviews .review .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+.reviews .clientDetail1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.reviews .clientDetail1 h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+.reviews .clientDetail1 small {
+  color: rgba(255, 255, 255, 0.7);
+}
+.reviews .clientDetail1 img {
+  margin-right: 13px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50px;
+}
+.reviews .clientDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews .clientDetail h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+.reviews .clientDetail small {
+  color: rgba(255, 255, 255, 0.7);
+}
+.reviews .clientDetail img {
+  margin-right: 13px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50px;
+}
+
 /*footer*/
 .footerSection {
   display: flex;
@@ -171,7 +249,7 @@
   margin-left: 128px;
 }
 .footerSection .contactForm {
-  flex-grow: 8;
+  padding-left: 20px;
 }
 .footerSection .contactForm h1 {
   color: #ffffff;
@@ -235,6 +313,7 @@
   font-size: 18px;
   margin-top: 9px;
   margin-bottom: 9px;
+  margin-right: 50px;
   color: #ffffff;
 }
 .address p {

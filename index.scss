@@ -48,6 +48,27 @@
   margin-right: 30px;
   width: 300px;
 }
+@mixin client($alignment){
+  display: flex;
+    align-items: center;
+    justify-content: $alignment;
+
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: #ffffff;
+    }
+    small {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    img {
+      margin-right: 13px;
+      width: 53px;
+      height: 53px;
+      border-radius: 50px;
+    }
+   
+}
 // logo
 .logo {
   display: flex;
@@ -190,6 +211,55 @@
     }
   }
 }
+.reviews {
+  display: flex;
+  .bigImg img {
+    border-radius: 12px;
+    margin-right: 24px;
+  }
+  .review1 {
+    h1 {
+      color: #ffffff;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 48px 35px 48px 35px;
+  }
+  .review {
+    padding: 48px 35px 48px 35px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-left: 24px;
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+    p {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .stars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 29px;
+    }
+  }
+  .clientDetail1 {
+    @include client(start);
+    
+   
+}
+.clientDetail{
+  
+  @include client(center);
+
+}
+}
 /*footer*/
 .footerSection {
   display: flex;
@@ -197,7 +267,7 @@
   margin-left: 128px;
   // Contact Form
   .contactForm {
-    flex-grow: 8;
+    padding-left: 20px;
     h1 {
       color: #ffffff;
       margin-top: 0px;
@@ -249,6 +319,7 @@
 
     margin-top: 9px;
     margin-bottom: 9px;
+    margin-right: 50px;
     color: #ffffff;
   }
   p {
