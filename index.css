@@ -165,18 +165,95 @@
 }
 
 /*footer*/
+.footerSection {
+  display: flex;
+  align-items: start;
+  margin-left: 128px;
+}
+.footerSection .contactForm {
+  flex-grow: 8;
+}
+.footerSection .contactForm h1 {
+  color: #ffffff;
+  margin-top: 0px;
+}
+.footerSection .contactForm form .emailNumber {
+  display: flex;
+}
+.footerSection .contactForm form .messageSubmit {
+  display: flex;
+  align-items: end;
+}
+.footerSection .contactForm textarea {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-right: 30px;
+  width: 300px;
+}
+.footerSection .contactForm label {
+  display: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 27px;
+}
+.footerSection .contactForm input {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-right: 30px;
+  width: 300px;
+}
+.footerSection .contactForm .submitButton {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: white;
+  width: 162px;
+  height: 44px;
+}
+
+.address .contact {
+  display: flex;
+  align-items: start;
+  margin-top: 48px;
+}
+.address .contact p {
+  margin-right: 50px;
+}
 .address h3 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
   margin-top: 9px;
   margin-bottom: 9px;
   color: #ffffff;
 }
 .address p {
-  color: #ffffff;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 0px;
-  margin-bottom: 38px;
 }
 .address .socials {
   display: flex;
+  align-items: center;
+}
+.address .socials img {
+  width: 36px;
+}
+.address .socials p {
+  margin-left: 21px;
+  margin-top: 22px;
 }
 
 .privacy {
@@ -188,6 +265,7 @@
 }
 
 .bottomSection {
+  margin-top: 58px;
   display: flex;
   justify-content: space-between;
 }
