@@ -380,13 +380,13 @@
 }
 /*Responsive*/
 @media only screen and (max-width: 900px) {
-  .navMenu .navbar .active{
-    height: 200px;
-
-  }
-  .navMenu .navbar .active ul{
-   opacity: 1;
-
+  .navbar{
+    .active{
+      height: 400px!important;
+      ul{
+       opacity: 1!important; 
+      }
+    }
   }
   .navMenu{
     padding-left:50px ;
@@ -398,6 +398,7 @@
     }
   
     .navbar{
+      
       position: absolute;
       height: 0;
       top: 127px;
