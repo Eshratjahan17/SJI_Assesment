@@ -1,5 +1,5 @@
 .main {
-  background-image: url("./Images/bg.png");
+  background-image: url("./Images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Nunito Sans", sans-serif;
@@ -22,6 +22,10 @@
   color: #ffffff;
   text-align: $align;
   padding-bottom: 50px;
+}
+@mixin mediaHeader($align){
+  font-size: 36px;
+  text-align: $align;
 }
 @mixin service {
   @include flex(center, center);
@@ -233,7 +237,9 @@
 // Portfolio
 .portfolio {
   @include commonMargin;
-  
+  .arrow{
+    display: none;
+  }
   h1 {
     @include header(start);
   }
@@ -256,7 +262,7 @@
       font-size: 18px;
       line-height: 25px;
       color: rgba(255, 255, 255, 0.7);
-      margin-left: 40px;
+     
       margin-right: 40px;
       &:hover {
         background-color: #ff5151;
@@ -480,7 +486,11 @@
   }
 }
 /*Responsive*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .main{
+    padding: 0px 50px;
+  }
+  // navbar
   .navbar {
     .active {
       height: 400px !important;
@@ -490,8 +500,8 @@
     }
   }
   .navMenu {
-    padding-left: 50px;
-    padding-right: 50px;
+    // padding-left: 50px;
+    // padding-right: 50px;
 
     .hamburger {
       display: block;
@@ -518,5 +528,114 @@
         margin-bottom: 24px;
       }
     }
+  }
+  // aboutus
+  .aboutUs{
+
+    flex-direction:column ;
+    h1{
+      @include mediaHeader(start);
+    }
+    img{
+      width: 552.41px;
+    }
+  }
+  // service section
+  .ourServices{
+    h1{
+      @include mediaHeader(start);
+    }
+  }
+  .service{
+    
+    flex-direction: column;
+  }
+  // projects
+  .portfolio{
+    .arrow{
+      @include flex(center,center );
+
+      img {
+        width: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        border-radius: 50px;
+        padding: 10px;
+        &:hover{
+          background-color: #ff5151;
+        }
+      }
+    }
+    h1{
+      @include mediaHeader(start);
+    }
+  }
+  .portfolioDetails{
+    
+    flex-direction: column;
+  }
+  .project1{
+    display: none;
+  }
+  .project{
+    flex-direction: column-reverse;
+  }
+  #project3{
+    display: none;
+  }
+  #project4{
+    display: none;
+  }
+  // testimonial
+  .testimonialHeader{
+    h1{
+      @include mediaHeader(start);
+    }
+  }
+  .reviews{
+    
+    flex-direction: column;
+    .review1{
+      flex-direction: column;
+      width: 327px;
+      height: 556px;
+      img{
+        width: auto;
+      height: auto;
+      }
+      .bigImg{
+        img{
+          width: 327px;
+          height: 300px;
+        }
+      }
+      .clientDetail1{
+        justify-content: start;
+      }
+    }
+  }
+  .review{
+    display: none;
+  }
+  
+  // Footer
+  .footerSection{
+    flex-direction: column;
+    .contact{
+      margin-top: 25px;
+    }
+    .contactForm{
+      padding-left: 0px;
+      input{
+        width: 200px;
+      
+      }
+      textarea{
+        width: 200px;
+      }
+    }
+    
+  }
+  .bottomSection{
+    flex-direction: column;
   }
 }

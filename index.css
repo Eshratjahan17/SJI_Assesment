@@ -1,5 +1,5 @@
 .main {
-  background-image: url("./Images/bg.png");
+  background-image: url("./Images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Nunito Sans", sans-serif;
@@ -206,6 +206,9 @@
   margin-top: 200px;
   margin-bottom: 200px;
 }
+.portfolio .arrow {
+  display: none;
+}
 .portfolio h1 {
   font-size: 60px;
   font-weight: 700;
@@ -236,7 +239,6 @@
   font-size: 18px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
-  margin-left: 40px;
   margin-right: 40px;
 }
 .portfolio .navigationTab a:hover {
@@ -516,16 +518,15 @@
 }
 
 /*Responsive*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0px 50px;
+  }
   .navbar .active {
     height: 400px !important;
   }
   .navbar .active ul {
     opacity: 1 !important;
-  }
-  .navMenu {
-    padding-left: 50px;
-    padding-right: 50px;
   }
   .navMenu .hamburger {
     display: block;
@@ -550,5 +551,99 @@
   }
   .navMenu .navbar li {
     margin-bottom: 24px;
+  }
+  .aboutUs {
+    flex-direction: column;
+  }
+  .aboutUs h1 {
+    font-size: 36px;
+    text-align: start;
+  }
+  .aboutUs img {
+    width: 552.41px;
+  }
+  .ourServices h1 {
+    font-size: 36px;
+    text-align: start;
+  }
+  .service {
+    flex-direction: column;
+  }
+  .portfolio .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio .arrow img {
+    width: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    padding: 10px;
+  }
+  .portfolio .arrow img:hover {
+    background-color: #ff5151;
+  }
+  .portfolio h1 {
+    font-size: 36px;
+    text-align: start;
+  }
+  .portfolioDetails {
+    flex-direction: column;
+  }
+  .project1 {
+    display: none;
+  }
+  .project {
+    flex-direction: column-reverse;
+  }
+  #project3 {
+    display: none;
+  }
+  #project4 {
+    display: none;
+  }
+  .testimonialHeader h1 {
+    font-size: 36px;
+    text-align: start;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .reviews .review1 {
+    flex-direction: column;
+    width: 327px;
+    height: 556px;
+  }
+  .reviews .review1 img {
+    width: auto;
+    height: auto;
+  }
+  .reviews .review1 .bigImg img {
+    width: 327px;
+    height: 300px;
+  }
+  .reviews .review1 .clientDetail1 {
+    justify-content: start;
+  }
+  .review {
+    display: none;
+  }
+  .footerSection {
+    flex-direction: column;
+  }
+  .footerSection .contact {
+    margin-top: 25px;
+  }
+  .footerSection .contactForm {
+    padding-left: 0px;
+  }
+  .footerSection .contactForm input {
+    width: 200px;
+  }
+  .footerSection .contactForm textarea {
+    width: 200px;
+  }
+  .bottomSection {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=index.css.map */
