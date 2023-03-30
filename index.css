@@ -587,6 +587,9 @@
     font-size: 36px;
     text-align: start;
   }
+  .portfolio .navigationTab ul li a {
+    margin-right: 12px;
+  }
   .portfolioDetails {
     flex-direction: column;
   }
@@ -642,6 +645,17 @@
   }
   .footerSection .contactForm textarea {
     width: 200px;
+  }
+  .footerSection .contactForm form {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .footerSection .contactForm form .emailNumber {
+    flex-direction: column;
+  }
+  .footerSection .contactForm form .messageSubmit {
+    flex-direction: column;
+    align-items: start;
   }
   .bottomSection {
     flex-direction: column;
