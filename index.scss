@@ -5,10 +5,15 @@
   font-family: "Nunito Sans", sans-serif;
   padding: 40px 120px 40px 120px;
 }
-@mixin service {
+@mixin flex($align, $justify) {
   display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin service {
+  @include flex(center, center);
   flex-direction: column;
-  align-items: center;
+
   padding: 39px 35px 52px 35px;
 }
 @mixin servicPargraph {
@@ -48,10 +53,27 @@
   margin-right: 30px;
   width: 300px;
 }
+@mixin client {
+  @include flex(center, center);
+
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+  small {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  img {
+    margin-right: 13px;
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+  }
+}
 // logo
 .logo {
-  display: flex;
-  align-items: center;
+  @include flex(center, start);
   img {
     height: 40px;
     width: 40px;
@@ -65,9 +87,10 @@
 }
 /*navbar*/
 .navMenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(center, space-between);
+  .hamburger {
+    display: none;
+  }
   ul {
     display: flex;
   }
@@ -77,6 +100,7 @@
 
   a {
     text-decoration: none;
+    display: block;
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -100,10 +124,14 @@
     color: #ffffff;
     padding: 12px 8px 10px 8px;
   }
+  .navbar {
+    @include flex(center, center);
+  }
 }
+
 /*about us*/
 .aboutUs {
-  display: flex;
+  @include flex(center, center);
 
   h2 {
     font-style: normal;
@@ -159,8 +187,7 @@
     color: #ffffff;
   }
   .service {
-    display: flex;
-    align-items: center;
+    @include flex(center, center);
   }
 }
 /*service*/
@@ -190,13 +217,14 @@
     }
   }
 }
-// testimonial
+// reviews
 .testimonialHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex(center, space-between);
+  margin-left: 102px;
+  margin-right: 102px;
   h1 {
     margin-top: 0px;
+    color: #ffffff;
   }
   img {
     width: 20px;
@@ -205,14 +233,64 @@
     padding: 10px;
   }
 }
+.reviews {
+  @include flex(center, center);
+  .bigImg img {
+    border-radius: 12px;
+    margin-right: 24px;
+  }
+  .review1 {
+    h1 {
+      color: #ffffff;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .review1Content {
+      padding-top: 19px;
+    }
+    display: flex;
+    width: 500px;
+    height: 335px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .review {
+    width: 200px;
+    height: 335px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-left: 24px;
+    h1 {
+      margin-top: 0px;
+      text-align: center;
+      color: #ffffff;
+    }
+    p {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .stars {
+      @include flex(center, center);
+      margin-bottom: 29px;
+    }
+  }
+  .clientDetail1 {
+    @include client;
+  }
+  .clientDetail {
+    @include client;
+  }
+}
 /*footer*/
 .footerSection {
-  display: flex;
-  align-items: start;
-  margin-left: 128px;
+  @include flex(start, center);
+  margin-top: 128px;
   // Contact Form
   .contactForm {
-    flex-grow: 8;
+    padding-left: 20px;
     h1 {
       color: #ffffff;
       margin-top: 0px;
@@ -264,6 +342,7 @@
 
     margin-top: 9px;
     margin-bottom: 9px;
+    margin-right: 50px;
     color: #ffffff;
   }
   p {
@@ -307,5 +386,43 @@
   }
 }
 /*Responsive*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+  .navbar {
+    .active {
+      height: 400px !important;
+      ul {
+        opacity: 1 !important;
+      }
+    }
+  }
+  .navMenu {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .navbar {
+      position: absolute;
+      height: 0;
+      top: 127px;
+      left: 0px;
+      right: 0px;
+      width: 100vw;
+      overflow: hidden;
+
+      ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        opacity: 0;
+      }
+      li {
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
