@@ -703,9 +703,22 @@ line-height: 25px;
   .project1 {
     display: none;
   }
-  .project {
-    flex-direction: column-reverse;
+  .portfolio{
+    .project {
+      flex-direction: column-reverse;
+      h4{
+        font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+      }
+      img{
+        width: 76vw;
+        height: auto;
+      }
+    }
+
   }
+  
   #project3 {
     display: none;
   }

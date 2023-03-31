@@ -723,8 +723,17 @@
   .project1 {
     display: none;
   }
-  .project {
+  .portfolio .project {
     flex-direction: column-reverse;
+  }
+  .portfolio .project h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .portfolio .project img {
+    width: 76vw;
+    height: auto;
   }
   #project3 {
     display: none;
