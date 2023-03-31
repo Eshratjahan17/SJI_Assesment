@@ -5,7 +5,7 @@
   font-family: "Nunito Sans", sans-serif;
   padding: 40px 120px 40px 120px;
 }
-@mixin commonMargin{
+@mixin commonMargin {
   margin-top: 200px;
   margin-bottom: 200px;
 }
@@ -23,7 +23,7 @@
   text-align: $align;
   padding-bottom: 50px;
 }
-@mixin mediaHeader($align){
+@mixin mediaHeader($align) {
   font-size: 36px;
   text-align: $align;
 }
@@ -32,8 +32,8 @@
   flex-direction: column;
 
   padding: 39px 35px 52px 35px;
-  &:hover{
-    border: 1px solid #6D6665;
+  &:hover {
+    border: 1px solid #6d6665;
     border-radius: 40px;
   }
 }
@@ -109,6 +109,7 @@
 /*navbar*/
 .navMenu {
   @include flex(center, space-between);
+  width: 100%;
   .hamburger {
     display: none;
   }
@@ -152,7 +153,6 @@
 
 /*about us*/
 .aboutUs {
- 
   @include flex(center, center);
 
   h1 {
@@ -165,7 +165,7 @@
     line-height: 39px;
     color: rgba(255, 255, 255, 0.7);
   }
-  img{
+  img {
     width: 776px;
   }
 
@@ -199,7 +199,7 @@
 /*Our services*/
 .ourServices {
   @include commonMargin;
- 
+
   h1 {
     @include header(center);
   }
@@ -237,7 +237,7 @@
 // Portfolio
 .portfolio {
   @include commonMargin;
-  .arrow{
+  .arrow {
     display: none;
   }
   h1 {
@@ -262,34 +262,33 @@
       font-size: 18px;
       line-height: 25px;
       color: rgba(255, 255, 255, 0.7);
-     
+
       margin-right: 40px;
       &:hover {
         background-color: #ff5151;
         border-radius: 4px;
         padding: 5px 16px 5px 16px;
         color: #ffffff;
-        transition: .5s;
+        transition: 0.5s;
       }
     }
   }
-  .portfolioDetails{
-    @include flex(start,center );
+  .portfolioDetails {
+    @include flex(start, center);
   }
-  .project1{
+  .project1 {
     padding-right: 57px;
-    img{
+    img {
       width: 555px;
       height: 446px;
     }
-    h3{
+    h3 {
       color: #ffffff;
-
     }
-    p{
+    p {
       color: rgba(255, 255, 255, 0.7);
     }
-    button{
+    button {
       border: 1px solid #ffffff;
       border-radius: 5px;
       background-color: transparent;
@@ -297,18 +296,18 @@
       padding: 12px 27px 12px 27px;
     }
   }
-  .project{
-    @include flex(start,center );
+  .project {
+    @include flex(start, center);
     padding-bottom: 33.66px;
-    img{
+    img {
       width: 282px;
       height: 212.34px;
     }
-    h4{
+    h4 {
       color: #ffffff;
       margin-top: 0px;
     }
-    p{
+    p {
       color: rgba(255, 255, 255, 0.7);
     }
   }
@@ -326,13 +325,12 @@
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 50px;
     padding: 10px;
-    &:hover{
+    &:hover {
       background-color: #ff5151;
     }
   }
 }
 .reviews {
-  
   @include flex(center, center);
   .bigImg img {
     border-radius: 12px;
@@ -405,12 +403,15 @@
     }
 
     textarea {
+      padding: 5px;
+      color: #ffffff;
       @include contactFormField;
     }
     label {
       @include contactFormLevel;
     }
     input {
+      padding: 5px;
       color: #ffffff;
       @include contactFormField;
     }
@@ -487,16 +488,17 @@
 }
 /*Responsive*/
 @media only screen and (max-width: 600px) {
-  .main{
+  .main {
     padding: 0px 50px;
   }
   // navbar
-  .navbar {
-    .active {
-      height: 400px !important;
-      ul {
-        opacity: 1 !important;
-      }
+  nav.navbar.active {
+    width: 78vw;
+    height: 100vw;
+    transition: 0.5s;
+
+    ul {
+      opacity: 1;
     }
   }
   .navMenu {
@@ -510,152 +512,153 @@
 
     .navbar {
       position: absolute;
-      height: 0;
-      top: 127px;
+      height: 0px;
+      top: 80px;
       left: 0px;
       right: 0px;
       width: 100vw;
-      overflow: hidden;
+
+      background-color: #19191b;
+      transition: 0.2s;
 
       ul {
         display: block;
         width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
+        margin-bottom: 100px;
+        margin-right: 228px;
+        text-align: start;
         opacity: 0;
       }
       li {
         margin-bottom: 24px;
       }
+      a {
+        margin-bottom: 12px;
+      }
     }
   }
-  // aboutus
-  .aboutUs{
 
-    flex-direction:column ;
-    h1{
+  // aboutus
+  .aboutUs {
+    flex-direction: column;
+    h1 {
       @include mediaHeader(start);
     }
-    img{
-      width: 552.41px;
+    img {
+      width: 442px;
     }
   }
   // service section
-  .ourServices{
-    h1{
+  .ourServices {
+    h1 {
       @include mediaHeader(start);
     }
   }
-  .service{
-    
+  .service {
     flex-direction: column;
   }
   // projects
-  .portfolio{
-    .arrow{
-      @include flex(center,center );
+  .portfolio {
+    .arrow {
+      @include flex(center, center);
 
       img {
         width: 20px;
         border: 2px solid rgba(255, 255, 255, 0.7);
         border-radius: 50px;
         padding: 10px;
-        &:hover{
+        &:hover {
           background-color: #ff5151;
         }
       }
     }
-    h1{
+    h1 {
       @include mediaHeader(start);
     }
-    .navigationTab{
-      ul{
-        li{
-          a{
+    .navigationTab {
+      ul {
+        li {
+          a {
             margin-right: 12px;
           }
         }
       }
     }
   }
-  .portfolioDetails{
-    
+  .portfolioDetails {
     flex-direction: column;
   }
-  .project1{
+  .project1 {
     display: none;
   }
-  .project{
+  .project {
     flex-direction: column-reverse;
   }
-  #project3{
+  #project3 {
     display: none;
   }
-  #project4{
+  #project4 {
     display: none;
   }
   // testimonial
-  .testimonialHeader{
-    h1{
+  .testimonialHeader {
+    h1 {
       @include mediaHeader(start);
     }
   }
-  .reviews{
-    
+  .reviews {
     flex-direction: column;
-    .review1{
+    .review1 {
       flex-direction: column;
       width: 327px;
       height: 556px;
-      img{
+      img {
         width: auto;
-      height: auto;
+        height: auto;
       }
-      .bigImg{
-        img{
+      .bigImg {
+        img {
           width: 327px;
           height: 300px;
         }
       }
-      .clientDetail1{
+      .clientDetail1 {
         justify-content: start;
       }
     }
   }
-  .review{
+  .review {
     display: none;
   }
-  
+
   // Footer
-  .footerSection{
+  .footerSection {
     flex-direction: column;
-    .contact{
+    .contact {
       margin-top: 25px;
     }
-    .contactForm{
+    .contactForm {
       padding-left: 0px;
-      input{
-        width: 200px;
-      
-      }
-      textarea{
+      input {
         width: 200px;
       }
-      form{
+      textarea {
+        width: 200px;
+      }
+      form {
         padding-right: 10px;
         padding-left: 10px;
-        .emailNumber{
+        .emailNumber {
           flex-direction: column;
         }
-        .messageSubmit{
+        .messageSubmit {
           flex-direction: column;
           align-items: start;
         }
       }
     }
-    
   }
-  .bottomSection{
+  .bottomSection {
     flex-direction: column;
   }
 }

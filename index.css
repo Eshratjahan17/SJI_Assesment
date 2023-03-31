@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .navMenu .hamburger {
   display: none;
@@ -161,7 +162,7 @@
   padding: 39px 35px 52px 35px;
 }
 .service .uiDesign:hover {
-  border: 1px solid #6D6665;
+  border: 1px solid #6d6665;
   border-radius: 40px;
 }
 .service .uiDesign img {
@@ -177,7 +178,7 @@
   padding: 39px 35px 52px 35px;
 }
 .service .graphicDesign:hover {
-  border: 1px solid #6D6665;
+  border: 1px solid #6d6665;
   border-radius: 40px;
 }
 .service .graphicDesign img {
@@ -193,7 +194,7 @@
   padding: 39px 35px 52px 35px;
 }
 .service .motionDesign:hover {
-  border: 1px solid #6D6665;
+  border: 1px solid #6d6665;
   border-radius: 40px;
 }
 .service .motionDesign img {
@@ -425,6 +426,8 @@
   align-items: end;
 }
 .footerSection .contactForm textarea {
+  padding: 5px;
+  color: #ffffff;
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-top: none;
@@ -443,6 +446,7 @@
   margin-top: 27px;
 }
 .footerSection .contactForm input {
+  padding: 5px;
   color: #ffffff;
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -522,11 +526,13 @@
   .main {
     padding: 0px 50px;
   }
-  .navbar .active {
-    height: 400px !important;
+  nav.navbar.active {
+    width: 78vw;
+    height: 100vw;
+    transition: 0.5s;
   }
-  .navbar .active ul {
-    opacity: 1 !important;
+  nav.navbar.active ul {
+    opacity: 1;
   }
   .navMenu .hamburger {
     display: block;
@@ -534,23 +540,28 @@
   }
   .navMenu .navbar {
     position: absolute;
-    height: 0;
-    top: 127px;
+    height: 0px;
+    top: 80px;
     left: 0px;
     right: 0px;
     width: 100vw;
-    overflow: hidden;
+    background-color: #19191b;
+    transition: 0.2s;
   }
   .navMenu .navbar ul {
     display: block;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 80px auto 0 auto;
-    text-align: center;
+    margin-bottom: 100px;
+    margin-right: 228px;
+    text-align: start;
     opacity: 0;
   }
   .navMenu .navbar li {
     margin-bottom: 24px;
+  }
+  .navMenu .navbar a {
+    margin-bottom: 12px;
   }
   .aboutUs {
     flex-direction: column;
@@ -560,7 +571,7 @@
     text-align: start;
   }
   .aboutUs img {
-    width: 552.41px;
+    width: 442px;
   }
   .ourServices h1 {
     font-size: 36px;
