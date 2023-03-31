@@ -1,8 +1,10 @@
 var hamBurger = document.querySelector(".hamburger");
+var mainBody = document.querySelector(".main");
 
 hamBurger.addEventListener("click", () => {
   var navBar = document.querySelector(".navbar");
   navBar.classList.toggle("active");
+  mainBody.classList.toggle("active");
   console.log("navbar clicked");
 });
 // hamBurger.onClick = function () {
