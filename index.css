@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Nunito Sans", sans-serif;
-  padding: 40px 120px 40px 120px;
+  padding: 0px 120px 40px 120px;
 }
 
 .logo {
@@ -68,6 +68,94 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mob-open .mob-close {
+  width: 30px;
+  height: 30px;
+}
+
+.mob-open {
+  position: fixed;
+  right: 15px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.mob-list {
+  height: 100%;
+  width: 76%;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 32px;
+  padding-top: 40px;
+  gap: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: #19191b;
+}
+.mob-list button {
+  width: 157px;
+  height: 44px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 12px 8px 10px 8px;
+}
+
+.mob-list_item {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+.mob-list_item:hover {
+  color: #ff5151;
+}
+
+.mob-list_item:first-child {
+  margin-bottom: 40px;
+}
+
+.mob-close {
+  position: fixed;
+  left: 395px;
+  top: 32px;
+  z-index: 5;
+  padding-top: 40px;
+}
+
+.opened {
+  opacity: 1;
+  animation: openanimation 200ms ease-in-out;
+}
+
+.close {
+  opacity: 0;
+  animation: closeanimation 200ms ease-in-out;
+}
+
+.mob-logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.mob-logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+}
+.mob-logo h3 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
 }
 
 /*about us*/
@@ -522,9 +610,34 @@
 }
 
 /*Responsive*/
+@media screen and (min-width: 600px) {
+  .mob-menu {
+    display: none;
+  }
+  .mob-logo {
+    display: none;
+  }
+}
+@keyframes openanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes closeanimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media only screen and (max-width: 600px) {
   .main {
     padding: 0px 50px;
+    margin: 0px;
   }
   nav.navbar.active {
     width: 78vw;
@@ -533,6 +646,9 @@
   }
   nav.navbar.active ul {
     opacity: 1;
+  }
+  .navMenu {
+    display: none;
   }
   .navMenu .hamburger {
     display: block;
