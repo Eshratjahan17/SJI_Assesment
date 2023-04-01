@@ -573,7 +573,7 @@ line-height: 25px;
   }
 }
 /*Responsive*/
-@media screen and (min-width:600px){
+@media screen and (min-width:768px){
   .mob-menu{
     display: none;
   }
@@ -599,7 +599,7 @@ line-height: 25px;
     opacity: 0;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .main {
     padding: 0px 50px;
     margin: 0px;
