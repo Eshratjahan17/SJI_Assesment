@@ -211,8 +211,8 @@ line-height: 25px;
 }
 .mob-close{
   position: fixed;
-  left: 395px;
-  top: 32px;
+  left: 67%;
+  top: 10%;
   z-index: 5;
   padding-top: 40px;
 }
@@ -738,6 +738,7 @@ line-height: 33px;
     }
   }
   .sliderButton {
+    margin-top: 32px;
     position: absolute;
     top: 748px;
     bottom: 50px;
@@ -745,6 +746,8 @@ line-height: 33px;
   }
   .reviews {
     flex-direction: column;
+    padding-left: 50px;
+    // padding-right: 50px;
     .review1 {
       align-items: center;
       flex-direction: column;
