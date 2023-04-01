@@ -206,13 +206,16 @@ line-height: 25px;
 
   
 }
+
 .mob-list_item:first-child{
   margin-bottom: 40px;
+  position: fixed;
+  top: 0px;
 }
 .mob-close{
   position: fixed;
   left: 67%;
-  top: 10%;
+
   z-index: 5;
   padding-top: 40px;
 }
@@ -230,7 +233,6 @@ line-height: 25px;
 }
 .mob-logo{
 @include logo ;
-
 
 
 }
