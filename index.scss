@@ -741,11 +741,12 @@ line-height: 33px;
     position: absolute;
     top: 748px;
     bottom: 50px;
-    left: 172px;
+    left: 40%;
   }
   .reviews {
     flex-direction: column;
     .review1 {
+      align-items: center;
       flex-direction: column;
       width: 327px;
       height: 556px;
@@ -754,7 +755,9 @@ line-height: 33px;
         height: auto;
       }
       .bigImg {
+       
         img {
+          margin-right: 0px;
           width: 327px;
           height: 300px;
         }
@@ -777,10 +780,10 @@ line-height: 33px;
     .contactForm {
       padding-left: 0px;
       input {
-        width: 200px;
+        // width: 200px;
       }
       textarea {
-        width: 200px;
+        // width: 200px;
       }
       form {
         padding-right: 10px;

@@ -756,12 +756,13 @@
     position: absolute;
     top: 748px;
     bottom: 50px;
-    left: 172px;
+    left: 40%;
   }
   .reviews {
     flex-direction: column;
   }
   .reviews .review1 {
+    align-items: center;
     flex-direction: column;
     width: 327px;
     height: 556px;
@@ -771,6 +772,7 @@
     height: auto;
   }
   .reviews .review1 .bigImg img {
+    margin-right: 0px;
     width: 327px;
     height: 300px;
   }
@@ -788,12 +790,6 @@
   }
   .footerSection .contactForm {
     padding-left: 0px;
-  }
-  .footerSection .contactForm input {
-    width: 200px;
-  }
-  .footerSection .contactForm textarea {
-    width: 200px;
   }
   .footerSection .contactForm form {
     padding-right: 10px;
