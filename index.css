@@ -791,6 +791,9 @@
   .footerSection .contact {
     margin-top: 25px;
   }
+  .footerSection .address h3 {
+    margin-right: 80px;
+  }
   .footerSection .contactForm {
     padding-left: 0px;
   }
