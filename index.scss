@@ -5,7 +5,7 @@
   font-family: "Nunito Sans", sans-serif;
   padding: 0px 120px 40px 120px;
 }
-@mixin logo{
+@mixin logo {
   @include flex(center, start);
   img {
     height: 40px;
@@ -107,12 +107,11 @@
 }
 // logo
 .logo {
- @include logo;
+  @include logo;
 }
 /*navbar*/
 .navMenu {
-  
-   @include flex(center, space-between);
+  @include flex(center, space-between);
   width: 100%;
   .hamburger {
     display: none;
@@ -155,18 +154,17 @@
   }
 }
 // mobile-responsive
-.mob-open .mob-close{
+.mob-open .mob-close {
   width: 30px;
   height: 30px;
-
 }
-.mob-open{
+.mob-open {
   position: fixed;
   right: 15px;
   top: 35px;
   cursor: pointer;
 }
-.mob-list{
+.mob-list {
   height: 100%;
   width: 76%;
   position: fixed;
@@ -179,10 +177,10 @@
   padding-top: 40px;
   gap: 45px;
   font-weight: 400;
-font-size: 18px;
-line-height: 25px;
+  font-size: 18px;
+  line-height: 25px;
   background-color: #19191b;
-  button{
+  button {
     width: 157px;
     height: 44px;
     font-weight: 400;
@@ -193,49 +191,39 @@ line-height: 25px;
     border-radius: 10px;
     color: #ffffff;
     padding: 12px 8px 10px 8px;
-
   }
 }
-.mob-list_item{
-  color:  rgba(255, 255, 255, 0.7);
-  padding: 24px 0px;
+.mob-list_item {
+  color: rgba(255, 255, 255, 0.7);
 
-    text-decoration: none;
-    &:hover{
-      color: #ff5151;
-    }
-
-  
+  text-decoration: none;
+  &:hover {
+    color: #ff5151;
+  }
 }
 
-.mob-list_item:first-child{
+.mob-list_item:first-child {
   margin-bottom: 40px;
   position: fixed;
   top: 0px;
 }
-.mob-close{
+.mob-close {
   position: fixed;
   left: 67%;
 
   z-index: 5;
   padding-top: 40px;
 }
-.opened{
- 
+.opened {
   opacity: 1;
   animation: openanimation 200ms ease-in-out;
-
-
 }
-.close{
+.close {
   opacity: 0;
   animation: closeanimation 200ms ease-in-out;
-
 }
-.mob-logo{
-@include logo ;
-
-
+.mob-logo {
+  @include logo;
 }
 
 /*about us*/
@@ -574,29 +562,28 @@ line-height: 25px;
   }
 }
 /*Responsive*/
-@media screen and (min-width:768px){
-  .mob-menu{
+@media screen and (min-width: 768px) {
+  .mob-menu {
     display: none;
   }
-  .mob-logo{
+  .mob-logo {
     display: none;
   }
-  
 }
 // animation
-@keyframes openanimation{
-  0%{
+@keyframes openanimation {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-@keyframes closeanimation{
-  0%{
+@keyframes closeanimation {
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
@@ -706,22 +693,21 @@ line-height: 25px;
   .project1 {
     display: none;
   }
-  .portfolio{
+  .portfolio {
     .project {
       flex-direction: column-reverse;
-      h4{
+      h4 {
         font-weight: 600;
-font-size: 24px;
-line-height: 33px;
+        font-size: 24px;
+        line-height: 33px;
       }
-      img{
+      img {
         width: 76vw;
         height: auto;
       }
     }
-
   }
-  
+
   #project3 {
     display: none;
   }
@@ -761,7 +747,6 @@ line-height: 33px;
         height: auto;
       }
       .bigImg {
-       
         img {
           margin-right: 0px;
           width: 327px;
@@ -782,10 +767,9 @@ line-height: 33px;
     flex-direction: column;
     .contact {
       margin-top: 25px;
-      
     }
     .address {
-      h3{
+      h3 {
         margin-right: 80px;
       }
     }
