@@ -34,6 +34,7 @@
 }
 .navMenu ul {
   display: flex;
+  padding-right: 181px;
 }
 .navMenu li {
   list-style-type: none;
@@ -611,7 +612,7 @@
 }
 
 /*Responsive*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .mob-menu {
     display: none;
   }
@@ -635,7 +636,7 @@
     opacity: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .main {
     padding: 0px 50px;
     margin: 0px;
@@ -744,6 +745,9 @@
   }
   .testimonialHeader {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .testimonialHeader h1 {
     position: relative;
@@ -758,7 +762,7 @@
     position: absolute;
     top: 748px;
     bottom: 50px;
-    left: 40%;
+    left: 47%;
   }
   .reviews {
     flex-direction: column;
@@ -787,6 +791,7 @@
   }
   .footerSection {
     flex-direction: column;
+    align-items: start;
   }
   .footerSection .contact {
     margin-top: 25px;
@@ -809,6 +814,18 @@
     align-items: start;
   }
   .bottomSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navMenu a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .navMenu ul {
+    padding-right: 122px;
+  }
+  .aboutUs {
     flex-direction: column;
   }
 }/*# sourceMappingURL=index.css.map */
