@@ -815,3 +815,117 @@
     flex-direction: column;
   }
 }
+// tablet responsive
+@media screen and (max-width: 786px) {
+  .main {
+    padding: 10px 10px 40px 10px;
+  }
+  .navMenu {
+    margin-bottom: 20px;
+    a {
+      margin-left: 13px;
+      margin-right: 13px;
+    }
+    ul {
+      padding-right: 0px;
+    }
+  }
+  .service {
+    .uiDesign {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .graphicDesign {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .motionDesign {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .portfolioDetails {
+    flex-direction: column;
+    .project {
+      h4 {
+        font-size: 19px;
+        margin-bottom: 0px;
+      }
+      img {
+        padding-left: 30px;
+      }
+    }
+    .project1 {
+      display: flex;
+      padding-bottom: 30px;
+      img {
+        width: 50%;
+        height: auto;
+        padding-right: 30px;
+      }
+    }
+  }
+  .sliderButton {
+    display: none;
+  }
+  .reviews {
+    flex-direction: column;
+    align-items: start;
+
+    .review {
+      width: 553px;
+      height: 200px;
+      margin-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      #review2 {
+        display: flex;
+        flex-direction: row-reverse;
+        .clientDetail {
+          width: 100%;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+      #review3 {
+        display: flex;
+        flex-direction: row-reverse;
+        .clientDetail {
+          width: 100%;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .footerSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 672px) {
+  .aboutUs {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .ourServices {
+    h1 {
+      font-size: 40px;
+    }
+
+    .service {
+      flex-direction: column;
+    }
+  }
+  .portfolio {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .testimonialHeader {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
