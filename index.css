@@ -34,7 +34,7 @@
 }
 .navMenu ul {
   display: flex;
-  padding-right: 181px;
+  padding-right: 157px;
 }
 .navMenu li {
   list-style-type: none;
@@ -47,8 +47,8 @@
   font-size: 18px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .navMenu a:hover {
   color: #ff5151;
@@ -829,9 +829,39 @@
     flex-direction: column;
   }
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1326px) {
+  .navMenu a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .navMenu ul {
+    padding-right: 122px;
+  }
+}
+@media screen and (max-width: 1146px) {
+  .navMenu a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .navMenu ul {
+    padding-right: 65px;
+  }
+}
+@media screen and (max-width: 1068px) {
   .main {
-    padding: 10px 10px 40px 10px;
+    padding: 0px 20px 20px 20px;
+  }
+  .navMenu a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .navMenu ul {
+    padding-right: 68px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0px 10px 40px 20px;
   }
   .navMenu {
     margin-bottom: 20px;
@@ -857,6 +887,9 @@
   }
   .portfolioDetails {
     flex-direction: column;
+  }
+  .portfolioDetails .project {
+    width: 80%;
   }
   .portfolioDetails .project h4 {
     font-size: 19px;
