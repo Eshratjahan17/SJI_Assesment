@@ -30,16 +30,16 @@ contactForm.addEventListener("submit", function (event) {
   const message = messageInput.value;
   const phone = phoneInput.value;
   console.log(email, name, message, phone);
-  if (name == "") {
-    alert("Please Enter your Name");
+  if (!isNaN(name)) {
+    alert("Name Can not contain Numeric Value");
     return;
   } else if (!validateEmail(email)) {
     alert("please Enter a valid email");
     return;
   } else if (isNaN(phone) || phone.toString().length !== 11) {
     alert("please enter a valid phone Number");
-    console.log(phone.toString().length);
+
     return;
   }
-  console.log("FormSubmitted");
+  alert("Form Submission Successful");
 });
