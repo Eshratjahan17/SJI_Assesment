@@ -588,6 +588,175 @@
     opacity: 0;
   }
 }
+
+// @media screen and (min-width: 1200px) {
+//   .navMenu {
+//     a {
+//       margin-left: 20px;
+//       margin-right: 20px;
+//     }
+//     ul {
+//       padding-right: 122px;
+//     }
+//   }
+//   .aboutUs {
+//     flex-direction: column;
+//   }
+// }
+// @media screen and (min-width: 1326px) {
+//   .navMenu {
+//     a {
+//       margin-left: 20px;
+//       margin-right: 20px;
+//     }
+//     ul {
+//       padding-right: 122px;
+//     }
+//   }
+// }
+// @media screen and (min-width: 1146px) {
+//   .navMenu {
+//     a {
+//       margin-left: 20px;
+//       margin-right: 20px;
+//     }
+//     ul {
+//       padding-right: 65px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 1068px) {
+//   .main {
+//     padding: 0px 20px 20px 20px;
+//   }
+//   .navMenu {
+//     a {
+//       margin-left: 20px;
+//       margin-right: 20px;
+//     }
+//     ul {
+//       padding-right: 68px;
+//     }
+//   }
+// }
+// tablet responsive
+@media screen and (min-width: 599px) and (max-width: 768px) {
+  .main {
+    padding: 0px 10px 40px 20px;
+  }
+  .navMenu {
+    margin-bottom: 20px;
+    a {
+      margin-left: 13px;
+      margin-right: 13px;
+    }
+    ul {
+      padding-right: 0px;
+    }
+  }
+  .aboutUs {
+    flex-direction: column;
+  }
+  .service {
+    .uiDesign {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .graphicDesign {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .motionDesign {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .portfolioDetails {
+    flex-direction: column;
+    .project {
+      width: 80%;
+      h4 {
+        font-size: 19px;
+        margin-bottom: 0px;
+      }
+      img {
+        padding-left: 30px;
+      }
+    }
+    .project1 {
+      display: flex;
+      padding-bottom: 30px;
+      img {
+        width: 50%;
+        height: auto;
+        padding-right: 30px;
+      }
+    }
+  }
+  .sliderButton {
+    display: none;
+  }
+  .reviews {
+    flex-direction: column;
+    align-items: start;
+
+    .review {
+      width: 553px;
+      height: 200px;
+      margin-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      #review2 {
+        display: flex;
+        flex-direction: row-reverse;
+        .clientDetail {
+          width: 100%;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+      #review3 {
+        display: flex;
+        flex-direction: row-reverse;
+        .clientDetail {
+          width: 100%;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .footerSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 672px) {
+  .aboutUs {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .ourServices {
+    h1 {
+      font-size: 40px;
+    }
+
+    .service {
+      flex-direction: column;
+    }
+  }
+  .portfolio {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .testimonialHeader {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
 // mobile responsive
 @media only screen and (max-width: 600px) {
   .main {
@@ -663,6 +832,9 @@
   }
   // projects
   .portfolio {
+    .project1 {
+      display: none;
+    }
     .arrow {
       @include flex(center, center);
 
@@ -800,171 +972,5 @@
   }
   .bottomSection {
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .navMenu {
-    a {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    ul {
-      padding-right: 122px;
-    }
-  }
-  .aboutUs {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 1326px) {
-  .navMenu {
-    a {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    ul {
-      padding-right: 122px;
-    }
-  }
-}
-@media screen and (max-width: 1146px) {
-  .navMenu {
-    a {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    ul {
-      padding-right: 65px;
-    }
-  }
-}
-@media screen and (max-width: 1068px) {
-  .main{
-    padding:0px 20px 20px 20px;
-  }
-  .navMenu {
-    a {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    ul {
-      padding-right: 68px;
-     
-    }
-  }
-}
-// tablet responsive
-@media screen and (max-width: 768px) {
-  .main {
-    padding: 0px 10px 40px 20px;
-  }
-  .navMenu {
-    margin-bottom: 20px;
-    a {
-      margin-left: 13px;
-      margin-right: 13px;
-    }
-    ul {
-      padding-right: 0px;
-    }
-  }
-  .service {
-    .uiDesign {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    .graphicDesign {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    .motionDesign {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-  .portfolioDetails {
-    flex-direction: column;
-    .project {
-      width: 80%;
-      h4 {
-        font-size: 19px;
-        margin-bottom: 0px;
-      }
-      img {
-        padding-left: 30px;
-      }
-    }
-    .project1 {
-      display: flex;
-      padding-bottom: 30px;
-      img {
-        width: 50%;
-        height: auto;
-        padding-right: 30px;
-      }
-    }
-  }
-  .sliderButton {
-    display: none;
-  }
-  .reviews {
-    flex-direction: column;
-    align-items: start;
-
-    .review {
-      width: 553px;
-      height: 200px;
-      margin-top: 50px;
-      padding-left: 0px;
-      padding-right: 0px;
-      margin-left: 0px;
-      #review2 {
-        display: flex;
-        flex-direction: row-reverse;
-        .clientDetail {
-          width: 100%;
-          padding-right: 10px;
-          padding-left: 10px;
-        }
-      }
-      #review3 {
-        display: flex;
-        flex-direction: row-reverse;
-        .clientDetail {
-          width: 100%;
-          padding-right: 10px;
-          padding-left: 10px;
-        }
-      }
-    }
-  }
-  .footerSection {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 672px) {
-  .aboutUs {
-    h1 {
-      font-size: 40px;
-    }
-  }
-  .ourServices {
-    h1 {
-      font-size: 40px;
-    }
-
-    .service {
-      flex-direction: column;
-    }
-  }
-  .portfolio {
-    h1 {
-      font-size: 40px;
-    }
-  }
-  .testimonialHeader {
-    h1 {
-      font-size: 40px;
-    }
   }
 }
