@@ -681,7 +681,7 @@
     flex-direction: column;
   }
   .portfolioDetails .project {
-    width: 80%;
+    width: 100%;
   }
   .portfolioDetails .project h4 {
     font-size: 19px;
@@ -935,5 +935,15 @@
   }
   .bottomSection {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .navMenu ul {
+    padding-right: 54px;
+  }
+}
+@media screen and (min-width: 692px) and (max-width: 720px) {
+  .navMenu ul {
+    padding-right: 95px;
   }
 }/*# sourceMappingURL=index.css.map */

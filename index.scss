@@ -688,7 +688,7 @@
   .portfolioDetails {
     flex-direction: column;
     .project {
-      width: 80%;
+      width: 100%;
       h4 {
         font-size: 19px;
         margin-bottom: 0px;
@@ -989,3 +989,17 @@
   }
 }
 // navbar responsive
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .navMenu {
+    ul {
+      padding-right: 54px;
+    }
+  }
+}
+@media screen and (min-width: 692px) and (max-width: 720px) {
+  .navMenu {
+    ul {
+      padding-right: 95px;
+    }
+  }
+}
